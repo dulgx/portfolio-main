@@ -1,6 +1,6 @@
 import React from "react";
 import { useEffect, useRef } from "react";
-import { gsap } from "gsap/dist/gsap";
+import { gsap } from "gsap";
 
 interface SidebarProps {
   setContent: (content: string) => void;

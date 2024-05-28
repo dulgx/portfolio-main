@@ -12,26 +12,72 @@ interface ContentProps {
 
 const Content: React.FC<ContentProps> = ({ content }) => {
   return (
-    <div className=" w-1/3 flex flex-col items-center mr-10 text-white overflow-y-auto">
+    <div className=" w-1/3 flex flex-col items-start mr-10 text-white overflow-y-hidden">
       {content === "info" && (
-        <p>
-          Hello, my name is [Your Name], and I'm thrilled to have the
-          opportunity to introduce myself. I come from a diverse background,
-          blending elements of [mention your cultural or ethnic background] with
-          experiences from [mention any significant places you've lived or
-          traveled]. My journey through life has been guided by a deep curiosity
-          and a passion for [mention your interests or areas of expertise].
-          Professionally, I've delved into [mention your field or industry],
-          where I've honed my skills in [mention specific skills or areas of
-          expertise]. Beyond work, I find joy in [mention your hobbies or
-          activities you enjoy]. One of my core values is [mention a core value
-          or belief that guides you]. I thrive in environments that foster
-          collaboration and creativity, where I can contribute my unique
-          perspective and learn from others. As someone who values growth and
-          learning, I'm always seeking new opportunities to expand my horizons
-          and make a positive impact. I look forward to connecting with each of
-          you and exploring the possibilities ahead together
-        </p>
+        <div className=" min-w-96">
+          <p className=" font-light">
+            I am currently expanding my skill set by learning front-end
+            development. I am now seeking a developer role where I can apply my
+            new skills, contribute to innovative projects, and continue my
+            professional growth in the tech industry.
+          </p>
+          <div className="mt-10">
+            <ul className="my-3">
+              <li className=" text-lg my-2">Professional Experience:</li>
+              <li className="text-sm font-light">
+                IT Specialist - Sendly NBFI
+              </li>
+              <li className="text-sm font-light">April 2023 - Present</li>
+
+              <ul className="my-2 text-sm font-light">
+                <li>
+                  ○ Administer and manage Office 365, including user accounts,
+                  email services, and collaboration tools.
+                </li>
+                <li>
+                  ○ Provide technical support and troubleshooting for hardware
+                  and software issues.
+                </li>
+                <li>
+                  ○ Administer Polaris and Odoo financial systems, including
+                  creating new user accounts for new employees and deleting
+                  accounts for departing employees.
+                </li>
+              </ul>
+            </ul>
+            <div className="my-5">
+              <h2 className=" text-lg my-2">
+                Education & Professional Development:
+              </h2>
+              <p className="text-sm">National University of Mongolia</p>
+              <p className="text-sm">Bachelor's Degree in Electronics - 2020</p>
+              <ul className=" text-sm mt-2 font-light">
+                <li>
+                  ○ Developed a strong foundation in electronic systems and
+                  circuit design. Discovered a passion for coding and started
+                  learning the C programming language.
+                </li>
+                <li>
+                  ○ Completed projects that combined electronics and
+                  programming, solidifying my interest in software development.
+                </li>
+              </ul>
+            </div>
+            <div className="my-5 font-light">
+              <h1 className="text-sm">
+                Yu language Academy- Japanese Language{" "}
+              </h1>
+              <p className="text-sm">Tokyo, Japan | 2021-2023</p>
+              <ul className="text-sm mt-2">
+                <li>○ Learned Japanese language while living in Japan.</li>
+                <li>
+                  ○ Achieved JLPT N2 level certificate, demonstrating advanced
+                  proficiency in Japanese.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       )}
       {content === "projects" && <ProjectLinks />}
       {content === "photo" && <PhotoAlbum />}
