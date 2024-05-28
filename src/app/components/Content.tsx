@@ -12,9 +12,9 @@ interface ContentProps {
 
 const Content: React.FC<ContentProps> = ({ content }) => {
   return (
-    <div className=" w-1/3 flex flex-col items-start mr-10 text-white overflow-y-hidden">
+    <div className=" w-1/2 flex flex-col items-start mr-10 text-white overflow-y-hidden">
       {content === "info" && (
-        <div className=" min-w-96">
+        <div className="">
           <p className=" font-light">
             I am currently expanding my skill set by learning front-end
             development. I am now seeking a developer role where I can apply my
