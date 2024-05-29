@@ -90,7 +90,7 @@ export default Content;
 
 const ProjectLinks = () => {
   return (
-    <div>
+    <div className="flex h-screen items-center">
       <ul>
         <li>SENDLY Intranet</li>
         <li>STOCKLAB WEB</li>

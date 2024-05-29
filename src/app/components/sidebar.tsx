@@ -7,18 +7,10 @@ interface SidebarProps {
 }
 
 const Sidebar: React.FC<SidebarProps> = ({ setContent }) => {
-  const elementRef = useRef(null);
-  useEffect(() => {
-    gsap.fromTo(
-      elementRef.current,
-      { x: -200, duration: 1 },
-      { x: 0, duration: 1 }
-    );
-  });
 
   return (
     <div className="grid text-white h-full w-1/4">
-      <div className="flex flex-col gap-2 mt-5 " ref={elementRef}>
+      <div className="flex flex-col gap-2 mt-5 ">
         <span className=" text-5xl">Dulguun Purevtseren</span>
         <span>Front-End Enthusiast</span>
         <p className=" font-light">
